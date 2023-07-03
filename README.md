@@ -1,5 +1,22 @@
 # Credit_card_Fraud_Detection_Model
-we are applying random forest algorithm for classification of the credit card dataset. Random Forest is an algorithm for classification and regression. Summarily, it is a collection of decision tree classifiers. Random forest has advantage over decision tree as it corrects the habit of over fitting to their training set.
-A subset of the training set is sampled randomly so that to train each individual tree and then a decision tree is built, each node then splits on a feature selected from a random subset of the full feature set. Even for large data sets with many features and data instances training is extremely fast in random forest and because each tree is trained independently of the others.
-The Random Forest algorithm has been found to provide a good estimate of the generalization error and to be resistant to over fitting.
+This project aims to predict fraudulent credit card transactions using machine learning models. The detection of fraudulent transactions is crucial from both the bank's and the customer's perspective, as the banks cannot afford to lose their customers' money to fraudsters. Every fraud is a loss to the bank, as they are responsible for the fraudulent transactions.
+
+The dataset used in this project contains transactions made over a period of two days in September 2013 by European credit cardholders. The dataset is highly unbalanced, with the positive class (frauds) accounting for only 0.172% of all transactions. Therefore, handling the data imbalance is a crucial aspect of building the models.
+
+The project involves the following steps:
+
+Data Exploration: The dataset is explored to understand its structure, check for missing values, and analyze the distribution of classes.
+
+Data Preprocessing: The dataset is preprocessed by dropping irrelevant columns, scaling the numeric features, and mitigating skewness in the data.
+
+Model Building: Several machine learning algorithms are applied to build models for fraud detection. The models include Logistic Regression, Decision Tree, Random Forest, and Support Vector Machines (SVM).
+
+Hyperparameter Tuning: The models are tuned using grid search and cross-validation to find the best combination of hyperparameters.
+
+Evaluation: The models are evaluated using performance metrics such as ROC-AUC score, accuracy, sensitivity, specificity, and F1-score. The ROC curves are plotted to visualize the performance of the models.
+
+Model Comparison: The performance of different models is compared to determine the best model for fraud detection in this particular dataset.
+
+This project provides insights into how machine learning models can be used to detect fraudulent credit card transactions and helps banks improve their fraud detection systems to protect their customers' money.
+
 The dataset can be found at : https://www.kaggle.com/mlg-ulb/creditcardfraud
